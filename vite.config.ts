@@ -21,3 +21,7 @@ export default defineConfig(({ mode }) => {
       }
     };
 });
+ export default defineConfig({
+  plugins: [react()],
+  base: "/ttsprivate/", // <--- Tambahkan baris ini!
+})
