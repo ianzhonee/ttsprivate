@@ -23,6 +23,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+        env:
+            GEMINI_API_KEY: ${{ AIzaSyDsne7mmZzBZkfg2xs2IwiT9x-lOFnKANM }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
