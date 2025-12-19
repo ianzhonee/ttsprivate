@@ -2,10 +2,13 @@ import { GoogleGenAI, Modality } from "@google/genai";
 import { VoiceName } from "../types";
 
 // Ensure API Key exists
-const apiKey = process.env.API_KEY;
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+
 if (!apiKey) {
-  console.error("API_KEY is missing in environment variables.");
+  console.error("VITE_GEMINI_API_KEY is missing. Make sure it starts with VITE_ and is set in your .env or GitHub Secrets.");
 }
+
+const ai = new GoogleGenAI({ apiKey: apiKey || '' });
 
 const ai = new GoogleGenAI({ apiKey: apiKey || '' });
 
