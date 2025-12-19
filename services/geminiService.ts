@@ -10,8 +10,6 @@ if (!apiKey) {
 
 const ai = new GoogleGenAI({ apiKey: apiKey || '' });
 
-const ai = new GoogleGenAI({ apiKey: apiKey || '' });
-
 export const generateSpeech = async (
   text: string,
   voice: VoiceName = VoiceName.Kore,
