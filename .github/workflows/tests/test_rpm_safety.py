@@ -22,5 +22,5 @@ class TestRPMSafety(unittest.TestCase):
         self.assertGreaterEqual(total_duration, 3.9, 
             f"Gagal! Durasi terlalu cepat ({total_duration:.2f}s). Peak RPM bisa terlampaui!")
 
-if __name__ == '__main__':
+if __name__ == '__main__.py':
     unittest.main()
