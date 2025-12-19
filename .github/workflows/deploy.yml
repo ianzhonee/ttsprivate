@@ -28,7 +28,7 @@ jobs:
         run: npm run build
         env:
           # Mengambil key dari GitHub Secrets, bukan ditulis langsung
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
